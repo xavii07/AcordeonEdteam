@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+}
+
+.acordeon {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.acordeon__grupo {
+  padding: 25px 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.acordeon__titulo {
+  display: inline;
+  font-size: 16px;
+  color: #000;
+}
+
+.acordeon__icono {
+  position: absolute;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.girar {
+  transform: rotate(180deg);
+  color: #0651f3;
+}
+
+.acordeon__icono:hover {
+  color: #0651f3;
+}
+
+.acordeon__texto {
+  margin-top: 10px;
+  display: none;
+}
+
+.acordeon__texto p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: rgb(99, 93, 93);
+  font-size: 14px;
+}
+
+.mostrar {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .acordeon {
+    width: 50%;
+  }
+}
